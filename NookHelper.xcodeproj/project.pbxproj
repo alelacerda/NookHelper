@@ -15,6 +15,7 @@
 		4B7F35F82AD600CE00A37194 /* NookHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7F35F72AD600CE00A37194 /* NookHelperTests.swift */; };
 		4B7F36022AD600CE00A37194 /* NookHelperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7F36012AD600CE00A37194 /* NookHelperUITests.swift */; };
 		4B7F36042AD600CE00A37194 /* NookHelperUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7F36032AD600CE00A37194 /* NookHelperUITestsLaunchTests.swift */; };
+		4BF8AFAC2AD7206A00F855B1 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF8AFAB2AD7206A00F855B1 /* UserData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		4B7F35FD2AD600CE00A37194 /* NookHelperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NookHelperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B7F36012AD600CE00A37194 /* NookHelperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NookHelperUITests.swift; sourceTree = "<group>"; };
 		4B7F36032AD600CE00A37194 /* NookHelperUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NookHelperUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4BF8AFAB2AD7206A00F855B1 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			children = (
 				4B7F35E42AD600CD00A37194 /* NookHelperApp.swift */,
 				4B7F35E62AD600CD00A37194 /* ContentView.swift */,
+				4BF8AFAB2AD7206A00F855B1 /* UserData.swift */,
 				4B7F35E82AD600CD00A37194 /* Item.swift */,
 				4B7F35EA2AD600CE00A37194 /* Assets.xcassets */,
 				4B7F35EC2AD600CE00A37194 /* Preview Content */,
@@ -285,6 +288,7 @@
 			files = (
 				4B7F35E72AD600CD00A37194 /* ContentView.swift in Sources */,
 				4B7F35E92AD600CD00A37194 /* Item.swift in Sources */,
+				4BF8AFAC2AD7206A00F855B1 /* UserData.swift in Sources */,
 				4B7F35E52AD600CD00A37194 /* NookHelperApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,61 +1,57 @@
-//
-//  ContentView.swift
-//  NookHelper
-//
-//  Created by Alessandra Fernandes Lacerda on 10/10/23.
-//
-
 import SwiftUI
 import SwiftData
 
 struct ContentView: View {
     @Environment(\.modelContext) private var modelContext
-    @Query private var items: [Item]
+    @Query(sort: \UserData.apiKey, order: .forward, animation: .smooth) private var userData: [UserData]
+
+    @State private var apiKey: String = ""
 
     var body: some View {
-        NavigationSplitView {
-            List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
-                    } label: {
-                        Text(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))
-                    }
-                }
-                .onDelete(perform: deleteItems)
+
+        VStack {
+            ForEach(userData) { data in
+                Text(data.apiKey)
+                    .foregroundStyle(.black)
             }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
-                }
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
-                    }
-                }
+            Text("Insert your NookAPI key")
+            TextField(apiKey.isEmpty ? "Insert here" : apiKey, text: $apiKey)
+                .padding(8)
+                .background(.gray)
+                .foregroundStyle(.white)
+                .cornerRadius(8)
+                .padding(.horizontal)
+            Button {
+                saveAPIKey()
+            } label: {
+                Text("Continue")
+                    .frame(maxWidth: .infinity)
+                    .padding()
+                    .background(.blue)
+                    .foregroundStyle(.white)
+                    .cornerRadius(8)
+                    .padding()
             }
-        } detail: {
-            Text("Select an item")
+        }
+        .onAppear {
+            if !userData.isEmpty {
+                apiKey = userData[0].apiKey
+            }
         }
     }
 
-    private func addItem() {
-        withAnimation {
-            let newItem = Item(timestamp: Date())
-            modelContext.insert(newItem)
-        }
-    }
+    private func saveAPIKey() {
 
-    private func deleteItems(offsets: IndexSet) {
-        withAnimation {
-            for index in offsets {
-                modelContext.delete(items[index])
-            }
+        if !userData.isEmpty {
+            userData[0].apiKey = apiKey
+        } else {
+            let data = UserData(apiKey: apiKey)
+            modelContext.insert(data)
         }
     }
 }
 
 #Preview {
     ContentView()
-        .modelContainer(for: Item.self, inMemory: true)
+        .modelContainer(for: UserData.self, inMemory: true)
 }
