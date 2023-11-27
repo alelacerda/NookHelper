@@ -13,7 +13,7 @@ struct NookHelperApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            OpeningView()
         }
         .modelContainer(sharedModelContainer)
     }

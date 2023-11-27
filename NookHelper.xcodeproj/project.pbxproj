@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		4B7F35E52AD600CD00A37194 /* NookHelperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7F35E42AD600CD00A37194 /* NookHelperApp.swift */; };
-		4B7F35E72AD600CD00A37194 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7F35E62AD600CD00A37194 /* ContentView.swift */; };
-		4B7F35E92AD600CD00A37194 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7F35E82AD600CD00A37194 /* Item.swift */; };
+		4B7F35E72AD600CD00A37194 /* OpeningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7F35E62AD600CD00A37194 /* OpeningView.swift */; };
 		4B7F35EB2AD600CE00A37194 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B7F35EA2AD600CE00A37194 /* Assets.xcassets */; };
 		4B7F35EE2AD600CE00A37194 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B7F35ED2AD600CE00A37194 /* Preview Assets.xcassets */; };
 		4B7F35F82AD600CE00A37194 /* NookHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7F35F72AD600CE00A37194 /* NookHelperTests.swift */; };
 		4B7F36022AD600CE00A37194 /* NookHelperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7F36012AD600CE00A37194 /* NookHelperUITests.swift */; };
 		4B7F36042AD600CE00A37194 /* NookHelperUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7F36032AD600CE00A37194 /* NookHelperUITestsLaunchTests.swift */; };
+		4BF0F8EB2AFAD589003E6BFB /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF0F8EA2AFAD589003E6BFB /* HomeView.swift */; };
 		4BF8AFAC2AD7206A00F855B1 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF8AFAB2AD7206A00F855B1 /* UserData.swift */; };
 /* End PBXBuildFile section */
 
@@ -38,8 +38,7 @@
 /* Begin PBXFileReference section */
 		4B7F35E12AD600CD00A37194 /* NookHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NookHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B7F35E42AD600CD00A37194 /* NookHelperApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NookHelperApp.swift; sourceTree = "<group>"; };
-		4B7F35E62AD600CD00A37194 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		4B7F35E82AD600CD00A37194 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		4B7F35E62AD600CD00A37194 /* OpeningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpeningView.swift; sourceTree = "<group>"; };
 		4B7F35EA2AD600CE00A37194 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B7F35ED2AD600CE00A37194 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4B7F35F32AD600CE00A37194 /* NookHelperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NookHelperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +46,7 @@
 		4B7F35FD2AD600CE00A37194 /* NookHelperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NookHelperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B7F36012AD600CE00A37194 /* NookHelperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NookHelperUITests.swift; sourceTree = "<group>"; };
 		4B7F36032AD600CE00A37194 /* NookHelperUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NookHelperUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4BF0F8EA2AFAD589003E6BFB /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		4BF8AFAB2AD7206A00F855B1 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -98,12 +98,9 @@
 		4B7F35E32AD600CD00A37194 /* NookHelper */ = {
 			isa = PBXGroup;
 			children = (
-				4B7F35E42AD600CD00A37194 /* NookHelperApp.swift */,
-				4B7F35E62AD600CD00A37194 /* ContentView.swift */,
+				4BA6717F2AF99750006CF696 /* Resources */,
+				4BA671802AF99758006CF696 /* Sources */,
 				4BF8AFAB2AD7206A00F855B1 /* UserData.swift */,
-				4B7F35E82AD600CD00A37194 /* Item.swift */,
-				4B7F35EA2AD600CE00A37194 /* Assets.xcassets */,
-				4B7F35EC2AD600CE00A37194 /* Preview Content */,
 			);
 			path = NookHelper;
 			sourceTree = "<group>";
@@ -131,6 +128,33 @@
 				4B7F36032AD600CE00A37194 /* NookHelperUITestsLaunchTests.swift */,
 			);
 			path = NookHelperUITests;
+			sourceTree = "<group>";
+		};
+		4BA6717F2AF99750006CF696 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4B7F35EC2AD600CE00A37194 /* Preview Content */,
+				4B7F35EA2AD600CE00A37194 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4BA671802AF99758006CF696 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				4B7F35E42AD600CD00A37194 /* NookHelperApp.swift */,
+				4BA671812AF99C4F006CF696 /* Views */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		4BA671812AF99C4F006CF696 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4B7F35E62AD600CD00A37194 /* OpeningView.swift */,
+				4BF0F8EA2AFAD589003E6BFB /* HomeView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,8 +310,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B7F35E72AD600CD00A37194 /* ContentView.swift in Sources */,
-				4B7F35E92AD600CD00A37194 /* Item.swift in Sources */,
+				4B7F35E72AD600CD00A37194 /* OpeningView.swift in Sources */,
+				4BF0F8EB2AFAD589003E6BFB /* HomeView.swift in Sources */,
 				4BF8AFAC2AD7206A00F855B1 /* UserData.swift in Sources */,
 				4B7F35E52AD600CD00A37194 /* NookHelperApp.swift in Sources */,
 			);
@@ -452,7 +476,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"NookHelper/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"NookHelper/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = 5JCA2V9H3D;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -481,7 +505,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"NookHelper/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"NookHelper/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = 5JCA2V9H3D;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
