@@ -14,6 +14,9 @@
 		4B7F35F82AD600CE00A37194 /* NookHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7F35F72AD600CE00A37194 /* NookHelperTests.swift */; };
 		4B7F36022AD600CE00A37194 /* NookHelperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7F36012AD600CE00A37194 /* NookHelperUITests.swift */; };
 		4B7F36042AD600CE00A37194 /* NookHelperUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7F36032AD600CE00A37194 /* NookHelperUITestsLaunchTests.swift */; };
+		4BB0D01F2B156D530059A7B7 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB0D01E2B156D530059A7B7 /* Coordinator.swift */; };
+		4BB0D0212B156D800059A7B7 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB0D0202B156D800059A7B7 /* Page.swift */; };
+		4BB0D0242B1571D00059A7B7 /* CoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB0D0232B1571D00059A7B7 /* CoordinatorView.swift */; };
 		4BF0F8EB2AFAD589003E6BFB /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF0F8EA2AFAD589003E6BFB /* HomeView.swift */; };
 		4BF8AFAC2AD7206A00F855B1 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF8AFAB2AD7206A00F855B1 /* UserData.swift */; };
 /* End PBXBuildFile section */
@@ -46,6 +49,9 @@
 		4B7F35FD2AD600CE00A37194 /* NookHelperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NookHelperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B7F36012AD600CE00A37194 /* NookHelperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NookHelperUITests.swift; sourceTree = "<group>"; };
 		4B7F36032AD600CE00A37194 /* NookHelperUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NookHelperUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4BB0D01E2B156D530059A7B7 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		4BB0D0202B156D800059A7B7 /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
+		4BB0D0232B1571D00059A7B7 /* CoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorView.swift; sourceTree = "<group>"; };
 		4BF0F8EA2AFAD589003E6BFB /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		4BF8AFAB2AD7206A00F855B1 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -142,6 +148,7 @@
 		4BA671802AF99758006CF696 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				4BB0D0222B1571B70059A7B7 /* Coordinator */,
 				4B7F35E42AD600CD00A37194 /* NookHelperApp.swift */,
 				4BA671812AF99C4F006CF696 /* Views */,
 			);
@@ -155,6 +162,16 @@
 				4BF0F8EA2AFAD589003E6BFB /* HomeView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		4BB0D0222B1571B70059A7B7 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				4BB0D01E2B156D530059A7B7 /* Coordinator.swift */,
+				4BB0D0202B156D800059A7B7 /* Page.swift */,
+				4BB0D0232B1571D00059A7B7 /* CoordinatorView.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -310,8 +327,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BB0D0212B156D800059A7B7 /* Page.swift in Sources */,
+				4BB0D0242B1571D00059A7B7 /* CoordinatorView.swift in Sources */,
 				4B7F35E72AD600CD00A37194 /* OpeningView.swift in Sources */,
 				4BF0F8EB2AFAD589003E6BFB /* HomeView.swift in Sources */,
+				4BB0D01F2B156D530059A7B7 /* Coordinator.swift in Sources */,
 				4BF8AFAC2AD7206A00F855B1 /* UserData.swift in Sources */,
 				4B7F35E52AD600CD00A37194 /* NookHelperApp.swift in Sources */,
 			);

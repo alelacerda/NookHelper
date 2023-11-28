@@ -29,7 +29,7 @@ struct OpeningView: View {
                         .padding(.horizontal)
 
                     NavigationLink {
-                        HomeView()
+                        CoordinatorView()
                     } label: {
                         Text("Login")
                             .font(.system(size: 32, weight: .semibold, design: .rounded))
